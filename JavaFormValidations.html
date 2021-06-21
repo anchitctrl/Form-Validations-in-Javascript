@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Form Validations</title>
+        <script>
+            function validate(){
+                var Username=document.getElementById("Username");
+                var Password=document.getElementById("Password");
+                if(Username.value.trim()=="" || Password.value.trim()==""){
+                    alert("Fill the blanks");
+                    return false;
+                }
+                else true;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Form Validations</h1>
+        <form onsubmit="return validate()" action="targetpage.html">
+            <input type="text" placeholder="Username" id="Username"><br><br>
+            <input type="password" placeholder="Password" id="Password"><br><br>
+            <button type="submit">Submit</button> 
+        </form>
+    </body>
+</html>
